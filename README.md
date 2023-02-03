@@ -13,8 +13,8 @@ $K_i$ -> kill score of ith player
 
 Let X be the decision variable
 
-${X_i_j_l} = 1$, if i and j are in the same team and part of same lobby
-${X_i_j_l} = 0$, otherwise
+$X_{ijl} = 1$, if i and j are in the same team and part of same lobby
+$X_{ijl} = 0$, otherwise
 
 
 
