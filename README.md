@@ -14,8 +14,10 @@ $K_i$ -> kill score of ith player
 Let X be the decision variable
 
 $X_{ijl} = 1$, if i and j are in the same team and part of same lobby
+
 $X_{ijl} = 0$, otherwise
 
+$\sum_{j} \sum_{l} X_{ijl} = 1, \forall i$
 
 
 
