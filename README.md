@@ -11,13 +11,26 @@ $i, j \in {1, 2, 3, ...., 300}$ -> total number of players
 
 $K_i$ -> kill score of ith player
 
-Let X be the decision variable
+### Decision Variable
 
 $X_{ijl} = 1$, if i and j are in the same team and part of same lobby
 
 $X_{ijl} = 0$, otherwise
 
+### Constraints
+
 $\sum_{j} \sum_{l} X_{ijl} = 1, \forall i$
 
+P -> parties
 
+$\sum X_{ijl} = 1, (i, j) \in P$
 
+$s_i$ <- score for ith lobby
+
+$\sum_{i} \sum_{j} X_{ijl} >= 48, \forall l$
+
+$\sum_{i} \sum_{j} X_{ijl} <= 52, \forall l$
+
+### Objective Function
+
+$\sum_{i} \sum_{j} \sum_{l} \| s_l - ((k_i + k_j)/2) \| *X_{ijl}$
